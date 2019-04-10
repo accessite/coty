@@ -1,0 +1,104 @@
+<script>
+
+    //alert("oui");
+    
+    $( document ).scroll(function(){
+        $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
+    });
+    
+    $( document ).ajaxSuccess(function(){
+        
+        $("li .ember-view").each(function(){
+            var menu = $(this).find(".selected-name").text();
+            if($.trim(menu) == "all tags"){
+                $(this).remove();
+            }
+        });
+        $(".nav-pills .ember-view").each(function(){
+           menu = $(this).find('a').text(); 
+           if(menu == "Categories" || menu == "Styleguide"){
+               $(this).remove();
+           }
+        });
+        $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
+        $('.d-button-label').text("ADD A TOPIC");
+        
+         $('.views .number').each(function(){
+            if($.isNumeric($(this).text()) && $(".topic-body").length == 0){
+                if($(this).text() == "1")
+                    $(this).text($(this).text() + " VIEW");
+                else
+                    $(this).text($(this).text() + " VIEWS");  
+            }
+
+        });
+        $('.posts .number').each(function(){
+            if($.isNumeric($(this).text()) && $(".topic-body").length == 0){
+                if($(this).text() == "1")
+                    $(this).text($(this).text() + " REPLY");
+                else
+                    $(this).text($(this).text() + " REPLIES");  
+            }
+        });
+        
+        if($(".topic-body").length > 0){
+            $(".welcome_title").hide();
+        } else $(".welcome_title").show();
+    });
+    
+    $( document ).ready(function(){
+        
+        
+        //HEADER
+        //$(".contents").prepend($("<div class='search_div'></div>"));
+        //$(".header-dropdown-toggle:first").clone(true).contents().appendTo(".search_div:first");
+        
+        //MENU
+        
+        $("li .ember-view").each(function(){
+            var menu = $(this).find(".selected-name").text();
+            if($.trim(menu) == "all tags"){
+                $(this).remove();
+            }
+        });
+        $(".nav-pills .ember-view").each(function(){
+           menu = $(this).find('a').text(); 
+           if(menu == "Categories" || menu == "Styleguide"){
+               $(this).remove();
+           }
+        });
+        
+        //ARTICLES
+        
+        $('.logo-big').attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
+        $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
+        $('.d-button-label').text("ADD A TOPIC");
+        
+        $('.views .number').each(function(){
+            if($(".topic-body").length == 0){
+                if($(this).text() == "1")
+                    $(this).text($(this).text() + " VIEW");
+                else
+                    $(this).text($(this).text() + " VIEWS");                
+            }
+
+        });
+        $('.posts .number').each(function(){
+            if($(".topic-body").length == 0){
+            if($(this).text() == "1")
+                $(this).text($(this).text() + " REPLY");
+            else
+                $(this).text($(this).text() + " REPLIES");
+            }
+            
+        });
+        
+//////////////////////////////////////////////////////////////////////////
+
+        if($(".topic-body").length > 0){
+            $(".welcome_title").hide();
+        } else $(".welcome_title").show();
+        
+    });
+    
+</script>
