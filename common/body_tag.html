@@ -43,6 +43,33 @@
             }
         });
         
+                //Réorganisation de la structure
+        $(".topic-list-item").each(function(){
+           var categorie = $(this).find(".link-bottom-line");
+           categorie.remove();
+           var titre = $(this).find(".main-link");
+           var avatars = $(this).find(".posters");
+           var date = $(this).find(".age");
+           var td_vues = $(this).find(".views");
+           var td_reponses = $(this).find(".posts-map");
+           
+           
+           titre.remove();
+           avatars.remove();
+           date.remove();
+           td_vues.remove();
+           td_reponses.remove();
+           
+           $(this).append(categorie);
+           $(this).append(date);
+           $(this).append(titre);
+           $(this).append(avatars);
+           $(this).append("<div class='replies__responses'></div>");
+           $(this).find('.replies__responses').append(td_vues);
+           $(this).find('.replies__responses').append(td_reponses);
+           
+        });
+        
         if($(".topic-body").length > 0){
             $(".welcome_title").hide();
         } else $(".welcome_title").show();
@@ -78,8 +105,8 @@
         $("#search-button").find('svg').remove();
         $("#search-button").append('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24.92"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Fill-1</title> <g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="HEADER-DESKTOP"><path id="Fill-1" class="cls-1" d="M24,21.46l-1.43,1.48a.16.16,0,0,1-.24,0L18.6,19.42a11.07,11.07,0,0,0,1.64-1.78L24,21.22a.17.17,0,0,1,0,.24M1.94,11.11A9.26,9.26,0,1,1,11.2,20.3a9.24,9.24,0,0,1-9.26-9.19m23.41,8.72L21.27,16a10.94,10.94,0,0,0,1.13-4.84A11.22,11.22,0,1,0,17,20.58l4,3.76a2.14,2.14,0,0,0,1.46.58A2.11,2.11,0,0,0,24,24.27l1.43-1.48a2.08,2.08,0,0,0-.06-3"/></g></g></g></g></svg>');
         
-        
-        //ARTICLES
+////////////////////////////////////////////////////////////////////////
+//ARTICLES
         
         $('.logo-big').attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
         $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
@@ -103,6 +130,35 @@
             }
             
         });
+        
+        //Réorganisation de la structure
+        $(".topic-list-item").each(function(){
+           var categorie = $(this).find(".link-bottom-line");
+           categorie.remove();
+           var titre = $(this).find(".main-link");
+           var avatars = $(this).find(".posters");
+           var date = $(this).find(".age");
+           var td_vues = $(this).find(".views");
+           var td_reponses = $(this).find(".posts-map");
+           
+           
+           titre.remove();
+           avatars.remove();
+           date.remove();
+           td_vues.remove();
+           td_reponses.remove();
+           
+           $(this).append(categorie);
+           $(this).append(date);
+           $(this).append(titre);
+           $(this).append(avatars);
+           $(this).append("<div class='replies__responses'></div>");
+           $(this).find('.replies__responses').append(td_vues);
+           $(this).find('.replies__responses').append(td_reponses);
+           
+        });
+        
+        
         
         //ADD A TOPIC
         $("#create-topic").find('svg').remove();
