@@ -108,17 +108,31 @@
            
         });
         
-        if($(".topic-body").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0){
             $(".welcome_title").hide();
-        } else $(".welcome_title").show();
+            $(".replace_title_header").show();
+        } else {
+            $(".welcome_title").show();
+            $(".replace_title_header").hide();
+        }
         
         //ADD A TOPIC
         $("#create-topic").find('svg').remove();
         $("#create-topic").append('<svg class="fa d-icon d-icon-plus svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#plus"></use></svg>');
         
+        $('body').find(".d-icon-chevron-down").remove();
+        $(".composer-controls .toggler").append('<svg class="fa d-icon d-icon-chevron-down svg-icon svg-string" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><line fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" x1="6.4" y1="6.4" x2="19.5" y2="19.5"/><line fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" x1="19.5" y1="6.4" x2="6.4" y2="19.5"/></svg>');
+        
+        $('#create-topic').on("click", function(){
+           $('body').addClass('popin_add-topic'); 
+        });
+        
+        if($('#reply-control').hasClass("closed")){
+               $('body').removeClass('popin_add-topic');
+        } else
+            $('body').addClass('popin_add-topic'); 
+        
     });
-    
-    
     
     
     
@@ -234,13 +248,35 @@
         $("#create-topic").find('svg').remove();
         $("#create-topic").append('<svg class="fa d-icon d-icon-plus svg-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use xlink:href="#plus"></use></svg>');
         
+        $(".composer-controls").append('<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="25px" height="25px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve"><line fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" x1="6.4" y1="6.4" x2="19.5" y2="19.5"/><line fill="none" stroke="#231F20" stroke-width="2" stroke-miterlimit="10" x1="19.5" y1="6.4" x2="6.4" y2="19.5"/></svg>');
+
+        $('#create-topic').on("click", function(){
+           $('body').addClass('popin_add-topic'); 
+        });
+        
+        if($('#reply-control').hasClass("closed")){
+               $('body').removeClass('popin_add-topic');
+        } else
+            $('body').addClass('popin_add-topic'); 
+
 //////////////////////////////////////////////////////////////////////////
 
-        if($(".topic-body").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0){
             $(".welcome_title").hide();
-        } else $(".welcome_title").show();
+            $(".replace_title_header-bg").show();
+            $(".replace_title_header-space").show();
+        } else {
+            $(".welcome_title").show();
+            $(".replace_title_header-bg").hide();
+            $(".replace_title_header-space").hide();
+        }
         
+        
+//////////////////////////////////////////////////////////////////////////
+//SUMMARY
+
     
-});
+    });
+
     
 </script>
