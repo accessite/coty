@@ -131,8 +131,18 @@
                $('body').removeClass('popin_add-topic');
         } else
             $('body').addClass('popin_add-topic'); 
+            
+        console.log($(".d-button-label").text());
+        $('body').find(' .titre_add_topic').remove();
+        if($('body').find(' .titre_add_topic').length > 0)
+            $('body').find(' .titre_add_topic').text($(".save-or-cancel .d-button-label").text());
+        else
+            $(".reply-to").prepend('<span class = "titre_add_topic">' + $(".save-or-cancel .d-button-label").text() + '</span>');
         
     });
+    
+    
+    
     
     
     
