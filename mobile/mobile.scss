@@ -1,0 +1,89 @@
+.welcome_title{
+    z-index: 0;
+    padding-top:40px;
+}
+
+.welcome_title h1{
+    font-size: 35px;
+    line-height: 39px;
+    padding-top: 20px;
+    padding: 0 20px;
+}
+
+.welcome_title p{
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.list-controls{
+    padding-top: 200px;
+    padding-bottom: 0;
+}
+
+.d-header .title{
+    left: 0;
+    transform: translate(0%);
+}
+
+.d-header #site-logo{
+    max-height: 60px;
+}
+
+.topic-list-item{
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.topic-list.ember-view tbody{
+    display: table-row-group;
+}
+
+.d-header {
+    height: 70px;
+}
+
+.list-controls .navigation-container{
+    flex-direction:column-reverse;
+    align-items: center;
+}
+
+.list-controls .nav-pills>li{
+    border: solid 1px #fff;
+}
+
+.list-controls .container #create-topic{
+    justify-content: center;
+}
+
+.btn.btn-default.btn.btn-icon-text.ember-view{
+    width: 150px;
+    border: solid 1px #fff;
+    border-radius: 20px;
+    margin: 0 auto 30px !important;
+}
+
+.nav-pills>li>a .d-icon{
+    opacity: 1;
+}
+
+.pull-left{
+    float: initial;
+}
+
+.topic-list .right{
+    margin-left: 0;
+}
+
+.list-controls .container #create-topic{
+    flex-direction: row-reverse;
+    z-index: 111;
+}
+
+.d-button-label, .selected-name{
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.topic-list-bottom h3{
+    padding: 0 20px;
+}
