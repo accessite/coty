@@ -22,6 +22,17 @@
                $(this).remove();
            }
         });
+        
+                //HOME SVGS
+        $("#search-button").find('svg').remove();
+        $("#search-button").append('<svg class="fa d-icon d-icon-search svg-icon svg-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24.92"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Fill-1</title> <g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="HEADER-DESKTOP"><path id="Fill-1" class="cls-1" d="M24,21.46l-1.43,1.48a.16.16,0,0,1-.24,0L18.6,19.42a11.07,11.07,0,0,0,1.64-1.78L24,21.22a.17.17,0,0,1,0,.24M1.94,11.11A9.26,9.26,0,1,1,11.2,20.3a9.24,9.24,0,0,1-9.26-9.19m23.41,8.72L21.27,16a10.94,10.94,0,0,0,1.13-4.84A11.22,11.22,0,1,0,17,20.58l4,3.76a2.14,2.14,0,0,0,1.46.58A2.11,2.11,0,0,0,24,24.27l1.43-1.48a2.08,2.08,0,0,0-.06-3"/></g></g></g></g></svg>');
+        $("#toggle-hamburger-menu").find('svg').remove();
+        $("#toggle-hamburger-menu").append('<svg class="fa d-icon d-icon-bars svg-icon svg-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 18"><style>.burger-svg{fill:none;stroke:#fff;stroke-linecap:square;stroke-width:2px;}</style><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="HEADER-DESKTOP"><g id="Group"><path id="SELEC" class="burger-svg" d="M26,1H1"/><path id="SELEC-2" data-name="SELEC" class="burger-svg" d="M26,9H1"/><path id="SELEC-3" data-name="SELEC" class="burger-svg" d="M26,17H1"/></g></g></g></g></g></svg>');
+
+
+        $(".category-drop-header").find('svg').remove();
+        $(".category-drop-header").append('<svg class="fa d-icon d-icon-caret-right svg-icon caret-icon svg-string" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5"><style>.triangle-svg{fill:#fff;}</style><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="Group"><polygon id="Triangle" class="triangle-svg" points="4 5 0 0 8 0 4 5"/></g></g></g></g></svg>');
+        
         $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
         $('.d-button-label').text("ADD A TOPIC");
         
@@ -136,6 +147,8 @@
            }
         });
         
+        
+        //HOME SVGS
         $("#search-button").find('svg').remove();
         $("#search-button").append('<svg class="fa d-icon d-icon-search svg-icon svg-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24.92"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Fill-1</title> <g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="HEADER-DESKTOP"><path id="Fill-1" class="cls-1" d="M24,21.46l-1.43,1.48a.16.16,0,0,1-.24,0L18.6,19.42a11.07,11.07,0,0,0,1.64-1.78L24,21.22a.17.17,0,0,1,0,.24M1.94,11.11A9.26,9.26,0,1,1,11.2,20.3a9.24,9.24,0,0,1-9.26-9.19m23.41,8.72L21.27,16a10.94,10.94,0,0,0,1.13-4.84A11.22,11.22,0,1,0,17,20.58l4,3.76a2.14,2.14,0,0,0,1.46.58A2.11,2.11,0,0,0,24,24.27l1.43-1.48a2.08,2.08,0,0,0-.06-3"/></g></g></g></g></svg>');
         $("#toggle-hamburger-menu").find('svg').remove();
@@ -144,9 +157,6 @@
 
         $(".category-drop-header").find('svg').remove();
         $(".category-drop-header").append('<svg class="fa d-icon d-icon-caret-right svg-icon caret-icon svg-string" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5"><style>.triangle-svg{fill:#fff;}</style><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="Group"><polygon id="Triangle" class="triangle-svg" points="4 5 0 0 8 0 4 5"/></g></g></g></g></svg>');
-        
-        $("#create-topic").find('svg').remove();
-        $("#create-topic").append('<svg class="fa d-icon d-icon-plus svg-icon svg-string" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13"><defs><style>.croix-svg{fill:none;stroke:#ff4d4d;stroke-linecap:square;stroke-width:2px;}</style></defs><title>Group-3 (2)</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="Group"><g id="Group-3"><path id="Line-5" class="croix-svg" d="M12,6.5H1"/><path id="Line-5-2" data-name="Line-5" class="croix-svg" d="M6.5,1V12"/></g></g></g></g></g></svg>');
         
 
 //ARTICLES
@@ -215,7 +225,6 @@
             $(this).append("<div class='replies__responses'></div>");
             $(this).find('.replies__responses').append(td_vues);
             $(this).find('.replies__responses').append(td_reponses);
-            date.text(convertDate(date.text())); 
            
         });
         
@@ -231,40 +240,7 @@
             $(".welcome_title").hide();
         } else $(".welcome_title").show();
         
-//////////////////////////////////////////////////////////////////////////
-        
-    });
     
-        function convertDate(date){
-        var arrayDate = date.split(" ");
-        console.log(arrayDate);
-        if(typeof arrayDate[3] !== 'undefined')
-            if(arrayDate[3].length < 5)
-                date = arrayDate[3] + " " + arrayDate[2];
-            else
-                date = arrayDate[2];
-        else
-            date = arrayDate[2];
-        date = date.replace(/d/g, " jours");
-        date = date.replace(/'/g, "");
-        date = date
-        .replace('Jan', "Janvier")
-        .replace('Feb', "Février")
-        .replace('Mar', "Mars")
-        .replace('Apr', "Avril")
-        .replace('May', "Mai")
-        .replace('Jun', "Juin")
-        .replace('Jul', "Juillet")
-        .replace('Aug', "Août")
-        .replace('Sep', "Septembre")
-        .replace('Oct', "Octobre")
-        .replace('Nov', "Novembre")
-        .replace('Dec', "Décembre");
-        
-        if(date == "1 jours") date = "1 jour";
-        
-        return date;   
-    }
 
     
 </script>
