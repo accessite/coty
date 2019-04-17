@@ -1,3 +1,7 @@
+html{
+   font-family: 'PT Sans', sans-serif;
+}
+
 .main-link.clearfix{
     background-color: red;
 }
@@ -331,7 +335,9 @@ a{
 
 /* demander d'être supp */
 .open .grippie, .reply-details, .toggle-fullscreen.btn-flat.ember-view,
-#reply-control .composer-bottom-right, #reply-control .mini-tag-chooser{
+#reply-control .composer-bottom-right, #reply-control .mini-tag-chooser,
+#reply-control .save-or-cancel #draft-status, #reply-control .save-or-cancel #file-uploading,
+.fa.d-icon.d-icon-times.svg-icon.svg-string{
     display: none !important;
 }
 
@@ -489,3 +495,20 @@ a{
 #reply-control .fa.d-icon.d-icon-chevron-down.svg-icon.svg-string line{
     stroke:#919191;
 }
+
+.titre_add_topic{
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus{
+    border-color: #ff4d4d;
+    box-shadow: 0 0 6px 0 #ff4d4d;
+}
+
+#reply-control.draft, #reply-control.saving{
+    z-index: 99999;
+}
+
