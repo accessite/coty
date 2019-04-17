@@ -87,3 +87,121 @@
 .topic-list-bottom h3{
     padding: 0 20px;
 }
+
+.drop li:last-child{
+    display:none;
+}
+
+.topic-list-item td{
+    display:none;
+}
+
+.topic-list-item .category-name{
+    color: #000;
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 13px;
+    padding: 15px 0 20px;
+}
+
+.topic-list-item span.relative-date{
+    text-align:center;
+    color: #808080;
+    padding-bottom: 5px;
+}
+
+.topic-list-item .title{
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0 20px 20px;
+}
+
+.topic-list-item .pull-left{
+    text-align: center;
+}
+
+.topic-list-item.visited a.title:not(.badge-notification), .latest-topic-list-item.visited a.title:not(.badge-notification), .category-topic-link.visited a.title:not(.badge-notification){
+    color: #000;
+}
+
+.num.views, .posts-map.badge-posts.heatmap-{
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.topic-list .posts-map{
+    font-size: 13px;
+    padding: 5px 0;
+}
+
+.num.posts-map.posts.heatmap-low{
+    display:none;
+}
+
+.nav-pills>li>a:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.category-list-item.category{
+    background-color: #f6f6f6;
+    margin-bottom: 30px;
+    border:none;
+}
+
+.category-list-item.category .category-name{
+    color: #000;
+    text-transform: uppercase;
+}
+
+.category-topic-link .main-link .topic-inset .title{
+    font-size: 14px;
+}
+
+.categories-list .category-list th{
+    padding: 0;
+}
+
+.categories-list .category-list{
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.topic-list th:first-of-type, .topic-list td:first-of-type{
+    font-size: 13px;
+}
+
+.category-list-item.category .category-topic-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.topic-list th:first-of-type, .topic-list td:first-of-type{
+    padding-bottom: 10px;
+}
+
+.select-kit-header.btn-default.dropdown-select-box-header.period-chooser-header.btn.btn-icon-text.ember-view{
+    width: 100%;
+    border: none;
+    margin-bottom: 0 !important;
+    font-size: 12px;
+    margin-top: 20px !important;
+}
+
+.topic-list .num a.badge-posts{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-row{
+    font-size: 12px;
+}
+
+.footer-message.ember-view{
+    font-size: 13px;
+    text-align:center;
+}
