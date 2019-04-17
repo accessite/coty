@@ -351,10 +351,141 @@ a{
 #reply-control .save-or-cancel{
    flex-basis: 100%;
    flex-direction: row-reverse;
-   margin-top: 15px;
+   margin-top: 25px;
 }
 
 #reply-control .save-or-cancel .cancel{
     margin-left: 0;
     margin-right: 30px;
+}
+
+
+.replace_title_header-space{
+    height:200px;
+    width:100%;
+    background-color: #ff4d4d;
+}
+
+
+.primary-textual{
+    background-color: #ff4d4d;
+}
+
+.user-primary-navigation{
+    background-color: #ff4d4d;
+}
+
+.details{
+    background-color: #ff4d4d !important;
+}
+
+.primary{
+    padding-top:120px;
+}
+
+.primary, .primary .avatar{
+    text-align:center;
+}
+
+.about{
+    margin-bottom:0 !important;
+}
+
+.stats-section{
+    width:100%;
+}
+
+.stats-section ul{
+    text-align:center;
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.stats-section ul li{
+    flex: 1 0 21%;
+  margin: 5px;
+  height: 50px;
+}
+
+#reply-control .reply-to .composer-controls button{
+    padding: 0;
+}
+
+#reply-control .reply-to{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+
+.popin_add-topic::before{
+    content:'';
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+}
+
+#reply-control.open.edit-title{
+    z-index: 99999;
+    box-shadow: none;
+}
+
+#reply-control .reply-area{
+    padding: 30px 50px 15px;
+}
+
+#reply-control.hide-preview{
+    max-width: 840px;
+}
+
+#reply-control .reply-to .d-icon{
+    height: 25px;
+    width: 25px;
+}
+
+.save-or-cancel .cancel{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.reply-arena .title-input.ember-view, .d-editor-input.ember-text-area.ember-view,
+.select-kit-header.combo-box-header.is-none.ember-view{
+    font-size:13px;
+    color: #757575;
+}
+
+#reply-control #reply-title{
+    font-size: 13px;
+}
+
+.select-kit .select-kit-row.is-highlighted{
+    background: rgba(255,77,77,0.2);
+}
+
+#reply-control .save-or-cancel button{
+    font-size: 13px;
+    padding: 6px 20px;
+}
+
+.save-or-cancel .fa.d-icon.d-icon-plus.svg-icon.svg-string{
+    display:none;
+}
+
+.save-or-cancel .d-button-label, .save-or-cancel .selected-name{
+    margin-right: 0;
+}
+
+.d-editor-textarea-wrapper.disabled .d-editor-button-bar{
+    visibility: initial;
+}
+
+.d-editor-button-bar{
+    border-bottom: 1px solid #919191;
+}
+
+#reply-control .fa.d-icon.d-icon-chevron-down.svg-icon.svg-string line{
+    stroke:#919191;
 }
