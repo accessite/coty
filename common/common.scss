@@ -1,3 +1,7 @@
+html{
+   font-family: 'PT Sans', sans-serif;
+}
+
 .main-link.clearfix{
     background-color: red;
 }
@@ -331,7 +335,9 @@ a{
 
 /* demander d'être supp */
 .open .grippie, .reply-details, .toggle-fullscreen.btn-flat.ember-view,
-#reply-control .composer-bottom-right, #reply-control .mini-tag-chooser{
+#reply-control .composer-bottom-right, #reply-control .mini-tag-chooser,
+#reply-control .save-or-cancel #draft-status, #reply-control .save-or-cancel #file-uploading,
+.fa.d-icon.d-icon-times.svg-icon.svg-string{
     display: none !important;
 }
 
@@ -379,13 +385,80 @@ a{
     background-color: #ff4d4d !important;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .primary{
-    padding-top:120px;
+    padding-top:60px;
 }
 
 .primary, .primary .avatar{
-    text-align:center;
+    margin:0px !important;
 }
+
+.user-profile-avatar{
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:none !important;
+}
+
+.user-profile-avatar .avatar{
+    width:70px !important;
+    height:70px !important;
+}
+
+.user-profile-names .username { 
+    text-transform: uppercase; 
+    font-size:35px!important;
+}
+
+.user-profile-names .username, .user-profile-names .full-name{
+    text-align:center;
+    color:#FFFFFF;
+}
+
+.details .primary .controls{
+    position:absolute;
+    right: 0;
+}
+
+.details .primary .controls a, .details .primary .controls svg {
+    text-transform:lowercase;
+    background-color:transparent;
+    color:#FFFFFF;
+}
+
+.user-primary-navigation .main-nav{
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-primary-navigation .main-nav li{
+    height:50px;
+    width:10%;
+}
+
+.user-primary-navigation .main-nav li a{
+    height:50px;
+    justify-content:center;
+}
+
+.secondary dl{ text-align: center; }
+.secondary dt{ color:#FFFFFF !important; }
 
 .about{
     margin-bottom:0 !important;
@@ -393,13 +466,26 @@ a{
 
 .stats-section{
     width:100%;
+    text-align:center;
+    margin-bottom:120px;
+    margin-top:70px;
 }
 
 .stats-section ul{
     text-align:center;
-    width:50%;
+    width:70%;
     display:flex;
     flex-wrap:wrap;
+    margin:auto !important;
+    text-transform: uppercase;
+}
+
+.stats-section .value{
+    font-size:30px;
+}
+
+.stats-section .label{
+    font-size:12px;
 }
 
 .stats-section ul li{
@@ -407,6 +493,63 @@ a{
   margin: 5px;
   height: 50px;
 }
+
+.user-content .top-section{
+    text-align:center;
+}
+
+.user-content .badges-section{
+    display:none;
+}
+
+.user-secondary-navigation{ text-transform: uppercase;}
+
+.notification-history, .user-content .alert-info{
+    margin-left:10%;
+}
+
+.user-additional-controls{display:none;}
+
+.action-list{
+    margin-left:30%;
+}
+
+.notification .time{
+    position:absolute;
+    right:10%;
+}
+
+.notification .d-icon-certificate {padding-right:30px;}
+
+.control-group{ margin-bottom:35px !important; }
+
+.control-group .control-label{ text-transform:uppercase; }
+
+.controls .btn-primary{
+    height:40px;
+    width:45%;
+}
+
+.show-badge, .badges{
+    margin-top:50px;
+    margin-left:30px;
+}
+
+.user-preferences .control-group .combo-box-header{
+    width:400px;
+    height:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #reply-control .reply-to .composer-controls button{
     padding: 0;
@@ -488,4 +631,24 @@ a{
 
 #reply-control .fa.d-icon.d-icon-chevron-down.svg-icon.svg-string line{
     stroke:#919191;
+}
+
+.titre_add_topic{
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus{
+    border-color: #ff4d4d;
+    box-shadow: 0 0 6px 0 #ff4d4d;
+}
+
+#reply-control.draft, #reply-control.saving{
+    z-index: 99999;
+}
+
+.badge-category .category-name{
+    color:#000000!important;
 }

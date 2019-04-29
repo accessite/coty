@@ -15,6 +15,11 @@
             }
         });
         
+        //Remplacer le nom par celui de l'utilisateur
+        var name = $(".header-dropdown-toggle").find('img').attr('title');
+        var name_split = name.split(' ');
+        $(".welcome_title").find('h1').text("WELCOME " + name_split[0].toUpperCase());
+        
         
         $(".nav-pills .ember-view").each(function(){
            menu = $(this).find('a').text(); 
@@ -108,7 +113,7 @@
            
         });
         
-        if($(".topic-body").length > 0 || $(".user-content").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
@@ -155,6 +160,11 @@
         //HEADER
         //$(".contents").prepend($("<div class='search_div'></div>"));
         //$(".header-dropdown-toggle:first").clone(true).contents().appendTo(".search_div:first");
+        
+        var name = $(".header-dropdown-toggle").find('img').attr('title');
+        var name_split = name.split(' ');
+        $(".welcome_title").find('h1').text("WELCOME " + name_split[0].toUpperCase());
+        //alert(name);
         
         //MENU NON DEROULANT
         
@@ -271,14 +281,12 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-        if($(".topic-body").length > 0 || $(".user-content").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0){
             $(".welcome_title").hide();
-            $(".replace_title_header-bg").show();
-            $(".replace_title_header-space").show();
+            $(".replace_title_header").show();
         } else {
             $(".welcome_title").show();
-            $(".replace_title_header-bg").hide();
-            $(".replace_title_header-space").hide();
+            $(".replace_title_header").hide();
         }
         
         
