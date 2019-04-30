@@ -1,0 +1,38 @@
+.user-content .top-section{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f6f6f6;
+}
+
+.user-content .top-section, .top-sub-section{
+    margin-bottom: 0;
+}
+
+.user-content .stats-section{
+    margin-bottom: 30px;
+}
+
+.user-content .replies-section, .user-content .topics-section{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.user-content .liked-by-section, .user-content .liked-section{
+    padding-bottom: 40px;
+}
+
+.user-content .replied-section{
+    padding-bottom: 20px;
+}
+
+.user-content .links-section p,
+.user-content .replies-section p,
+.user-content .topics-section p,
+.user-content .summary-user-list p{
+    color: #919191;
+}
+
+.user-main .about .details .primary h2{
+    font-size: 1.1487em;
+}

@@ -205,3 +205,127 @@
     font-size: 13px;
     text-align:center;
 }
+
+.user-main{
+    margin-top: 0;
+}
+
+.primary{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.user-profile-names .username{
+    font-size: 24px !important;
+}
+
+.details .primary .controls{
+    position: relative;
+}
+
+.user-main .about .primary{
+    align-items: center;
+}
+
+.user-main .about .controls .btn{
+    margin-bottom: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.user-main .about .controls .btn svg{
+    margin-left: 5px;
+}
+
+.main-nav.mobile-nav.ember-view{
+    background-color: #f6f6f6;
+    border:none;
+    width: 80%;
+    display:block;
+    top: 30%;
+}
+
+.user-content-wrapper .user-primary-navigation{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 3;
+}
+
+.mobile-nav a .d-icon{
+    color: #222222;
+}
+
+.user-primary-navigation .main-nav li{
+    width: 100%;
+}
+
+.user-main .user-content{
+    border-top: 1px solid #f6f6f6;
+}
+
+.user-primary-navigation{
+    background-color: #fff;
+}
+
+.user-content .stats-section{
+    padding: 20px 0 0;
+    margin-top: 50px;
+    margin-bottom: 30px !important;
+}
+
+.user-content .stats-section ul{
+    width: 100%;
+}
+
+.user-content .stats-section ul li{
+    flex: initial;
+    width: calc(50% - 20px);
+    text-align: left;
+    margin: 0 10px 10px;
+}
+
+.user-content .stats-section .value{
+    font-size: 26px;
+}
+
+.user-content .replies-section, .user-content .topics-section,
+.user-content .summary-user-list, .links-section
+{
+    width: 80%;
+    padding: 20px 0 1px;
+    float: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f6f6f6;
+}
+
+.user-content .replies-section p,
+.user-content .topics-section p, .user-content .summary-user-list p,
+.user-content .links-section p{
+    text-align:left;
+    padding: 0 25px;
+}
+
+.user-content .pull-left{
+    float: initial;
+}
+
+.user-content .top-section{
+    margin-bottom: 0;
+}
+
+.top-section, .top-sub-section{
+    margin-bottom: 30px;
+}
+
+.user-main .collapsed-info.about .details .user-profile-avatar{
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 8px auto;
+}
+
+.user-main .about .details .primary h2{
+    font-size: 1.1487em !important;
+}

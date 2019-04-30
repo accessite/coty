@@ -385,19 +385,6 @@ a{
     background-color: #ff4d4d !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .primary{
     padding-top:60px;
 }
@@ -655,4 +642,98 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:f
 
 .badge-category .category-name{
     color:#000000!important;
+}
+
+.top-section .stats-title{
+    font-weight: 400;
+}
+
+.user-content .stats-section{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f6f6f6;
+    padding: 40px 0;
+}
+
+.user-content .stats-section .value{
+    font-weight: 400;
+}
+
+.user-content .stats-section .label{
+    font-size: 13px;
+}
+
+.combo-box-header{
+    color:#FFFFFF !important;
+}
+
+.user-main .about .details .primary h1{
+    font-weight: normal;
+}
+
+.user-main .about.collapsed-info .details .primary{
+    padding-bottom: 30px;
+}
+
+.nav-pills>li>a .d-icon{
+    opacity: 1;
+}
+
+.user-main .about .details .user-profile-avatar{
+    margin-bottom: 5px;
+}
+
+.nav-pills>li a.active:before{
+    content:'';
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+
+.user-content-wrapper .nav-pills>li a.active{
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+}
+
+.user-content-wrapper .user-primary-navigation .main-nav li:after{
+    content:'';
+    width: 1px;
+    height: 25px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    opacity: 0.3;
+}
+
+.user-content-wrapper .nav-pills>li a:hover{
+    position: relative;
+    color: #fff;
+    background-color: transparent;
+}
+
+.user-primary-navigation .main-nav li:last-child:after{
+    content: none;
+}
+
+.user-primary-navigation .nav-pills>li{
+    margin-right: 0;
+}
+
+.user-primary-navigation .main-nav li{
+    position: relative;
+    width: 13%;
+}
+
+.user-preferences .form-vertical .control-label{
+    font-weight: 300;
+}
+
+.user-main .about .secondary dd{
+    color: #fff;
 }
