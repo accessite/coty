@@ -111,6 +111,21 @@
             $(".welcome_title").hide();
         } else $(".welcome_title").show();
         
+       if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0){
+            $(".welcome_title").hide();
+            $(".replace_title_header").show();
+        } else {
+            $(".welcome_title").show();
+            $(".replace_title_header").hide();
+        }
+        
+        
+        $("body").find(".collapsed-info .user-primary-navigation ul li").each(function(){
+             if($(this).find("a").text() == "Messages" || $(this).find("a").text() == "Badges" || $(this).find("a").text() == "Themes")
+                $(this).remove();
+        });
+        
+        
     });
     
     
@@ -193,6 +208,18 @@
         
 //////////////////////////////////////////////////////////////////////////
 //HOME MOBILE
+
+        if($(".topic-body").length > 0){
+            $(".welcome_title").hide();
+        } else $(".welcome_title").show();
+        
+       if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0){
+            $(".welcome_title").hide();
+            $(".replace_title_header").show();
+        } else {
+            $(".welcome_title").show();
+            $(".replace_title_header").hide();
+        }
 
         $(".topic-list-item").each(function(){
             var categorie = $(this).find(".category-name");
