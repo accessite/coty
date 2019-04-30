@@ -498,7 +498,7 @@ a{
     text-align:center;
 }
 
-.user-content .badges-section{
+.user-content .badges-section, .top-categories-section{
     display:none;
 }
 
@@ -538,6 +538,10 @@ a{
 .user-preferences .control-group .combo-box-header{
     width:400px;
     height:40px;
+}
+
+.user-detail .details{
+    background-color:transparent !important;
 }
 
 
