@@ -120,9 +120,12 @@
         }
         
         
+        if($(".user-main .user-primary-navigation ul li").length > 6){
+            $(".user-main .user-primary-navigation ul li:nth-child(6), .user-main .user-primary-navigation ul li:nth-child(5), .user-main .user-primary-navigation ul li:nth-child(4)").remove();
+        }
+        console.log($("body").find(".user-main .user-primary-navigation ul li").length);
         $("body").find(".collapsed-info .user-primary-navigation ul li").each(function(){
-             if($(this).find("a").text() == "Messages" || $(this).find("a").text() == "Badges" || $(this).find("a").text() == "Themes")
-                $(this).remove();
+             console.log("yo");
         });
         
         
@@ -136,7 +139,11 @@
     
     
     $( document ).ready(function(){
-        
+        console.log($(".user-main .user-primary-navigation ul li").length);
+        if($(".user-main .user-primary-navigation ul li").length > 6){
+            $(".user-main .user-primary-navigation ul li:nth-child(6), .user-main .user-primary-navigation ul li:nth-child(5), .user-main .user-primary-navigation ul li:nth-child(4)").remove();
+
+        }
         
         $("li .ember-view").each(function(){
             var menu = $(this).find(".selected-name").text();
