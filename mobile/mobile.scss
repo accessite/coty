@@ -400,3 +400,50 @@
 .controls.ember-view{
     padding-top: 0;
 }
+
+.user-content-wrapper .user-additional-controls+.user-content, .user-content-wrapper .user-secondary-navigation+.user-content{
+    padding-top: 45px;
+    border: none;
+}
+
+.mobile-nav>li>a{
+    height: 50px;
+    text-transform: initial;
+}
+
+.user-stream{
+    max-width: 80%;
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+.user-stream .title{
+    white-space: inherit;
+    text-align: center;
+}
+
+.user-stream-item .category{
+    text-align:center;
+}
+
+.user-stream-item .time{
+    text-align:center;
+    margin-bottom: 10px;
+    float: initial;
+}
+
+.user-stream .avatar-link{
+    float: initial;
+    text-align:center;
+}
+
+.user-stream .avatar-wrapper{
+    left: 50%;
+    position: relative;
+    transform:translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.topic-list tbody{
+    border-top: none;
+}
