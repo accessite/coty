@@ -217,7 +217,6 @@ html{
 
 .badge-wrapper .badge-category .category-name{
     font-weight: 300;
-    color: #808080;
 }
 
 .topic-list .num.activity a{
@@ -315,16 +314,8 @@ td.main-link.clearfix{
     color: #ff4d4d !important;
 }
 
-.category-name{
-    color: #fff;
-}
-
 .btn .fa{
     margin-right: 0;
-}
-
-.category-breadcrumb .ember-view span.category-name {
-    color: #fff;
 }
 
 a{
@@ -652,7 +643,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:f
     z-index: 99999;
 }
 
-.badge-category .category-name{
+.select-kit-body .select-kit-collection li{
     color:#000000!important;
 }
 
@@ -934,4 +925,16 @@ li.avatars{
 
 .topic-list-item-separator{
     display:none;
+}
+
+.admin-main-nav ul li a, .admin-controls ul li a{
+    color:#000000;
+}
+
+.admin-contents section{
+    background-color:#FFFFFF !important;
+}
+
+.badge-wrapper.bullet span.badge-category{
+    color: inherit;
 }

@@ -1,9 +1,5 @@
 <script>
     
-    $( document ).scroll(function(){
-        $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
-    });
-    
     $( document ).ajaxSuccess(function(){
         
         //Remplacer le nom par celui de l'utilisateur
@@ -24,7 +20,6 @@
         $(".category-drop-header").find('svg').remove();
         $(".category-drop-header").append('<svg class="fa d-icon d-icon-caret-right svg-icon caret-icon svg-string" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5"><style>.triangle-svg{fill:#fff;}</style><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="Group"><polygon id="Triangle" class="triangle-svg" points="4 5 0 0 8 0 4 5"/></g></g></g></g></svg>');
         
-        $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
         $('#create-topic .d-button-label').text("ADD A TOPIC");
         
         $('.views .number').each(function(){
@@ -99,7 +94,7 @@
            
         });
         
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
@@ -162,6 +157,11 @@
         $(".welcome_title").find('h1').text("WELCOME " + name_split[0].toUpperCase());
         //alert(name);
         
+        $("body").on("click", ".search-context .widget-link", function(){
+            $(".welcome_title").hide();
+            $(".replace_title_header").show();
+        });
+        
         //MENU NON DEROULANT
         if($(".navigation-container #navigation-bar li").length > 6){
             $(".navigation-container #navigation-bar li:nth-child(6), .navigation-container #navigation-bar li:nth-child(2)").remove();
@@ -184,8 +184,6 @@
         $(".share-and-invite").remove();
         $(".action .share").remove();
         
-        $('.logo-big').attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
-        $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
         $('#create-topic .d-button-label').text("ADD A TOPIC");
         
         $('.views .number').each(function(){
@@ -270,7 +268,7 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $(".search-advanced").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
