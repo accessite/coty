@@ -329,3 +329,45 @@
 .user-main .about .details .primary h2{
     font-size: 1.1487em !important;
 }
+
+#reply-control .title-and-category, #reply-control .user-selector{
+    display:block;
+}
+
+#reply-control .with-tags .title-input, #reply-control .category-input, #reply-control .with-tags .category-input{
+    margin-left: 0;
+    width: 100%;
+}
+
+.reply-to .toggle-toolbar.btn-flat{
+    display:none;
+}
+
+.reply-area .submit-panel .save-or-cancel{
+    flex-direction: column !important;
+}
+
+.reply-area .submit-panel .save-or-cancel .btn.btn-icon-text.btn-primary.create{
+    width: 100%;
+}
+
+#reply-control .submit-panel .save-or-cancel .cancel{
+    margin: 10px 0 0;
+}
+
+#reply-control .d-editor-button-bar{
+    display:block;
+    padding: 3px;
+}
+
+.bootbox.modal{
+    max-width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#reply-control.open.edit-title{
+    height: 100% !important;
+    bottom: 0 !important;
+    top: 50% !important;
+}
