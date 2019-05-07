@@ -11,10 +11,9 @@ html{
 }
 
 .menu-container-faq-link{
-    display:none;
 }
 
-.menu-links li:nth-child(5), .menu-links li:nth-child(6), .menu-links li:nth-child(7), .menu-links li:nth-child(5), .menu-links li:nth-child(8), .menu-links li:nth-child(9), .menu-container-footer-links .menu-links li:nth-child(1) {
+.menu-links li:nth-child(5), .menu-links li:nth-child(6), .menu-links li:nth-child(7), .menu-links li:nth-child(5), .menu-links li:nth-child(8), .menu-links li:nth-child(9) {
     display:none;
 }
 
@@ -123,7 +122,7 @@ html{
 }
 
 .list-controls{
-    padding-top: 285px;
+    padding-top: 290px;
     max-width: 1280px;
     margin: 0 auto;
     padding-bottom: 25px;
@@ -217,7 +216,6 @@ html{
 
 .badge-wrapper .badge-category .category-name{
     font-weight: 300;
-    color: #000;
 }
 
 .topic-list .num.activity a{
@@ -1141,5 +1139,26 @@ li.avatars{
 
 .menu-panel li.category-link .badge-wrapper .badge-category .category-name {
         color:#ff4d4d !important;
+}
 
+.admin-main-nav{
+    margin-top:30px;
+}
+
+.topic-list-bottom, .categories-and-latest{
+    margin-top:70px;
+}
+
+.pinned-button, .topic-footer-main-buttons .toggle-admin-menu{
+    display:none;
+}
+
+.retour_button{
+    position: absolute;
+    left: 10%;
+}
+
+.static-faq #main-outlet .ember-view, .about-page #main-outlet .ember-view, .static-tos #main-outlet .ember-view, .static-privacy #main-outlet .ember-view{
+    margin-top:20px;
+    margin-left:20px;
 }
