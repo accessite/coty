@@ -123,7 +123,7 @@ html{
 }
 
 .list-controls{
-    padding-top: 285px;
+    padding-top: 315px;
     max-width: 1280px;
     margin: 0 auto;
     padding-bottom: 25px;
@@ -217,7 +217,6 @@ html{
 
 .badge-wrapper .badge-category .category-name{
     font-weight: 300;
-    color: #000;
 }
 
 .topic-list .num.activity a{
@@ -440,7 +439,6 @@ a{
     justify-content:center;
 }
 
-
 .secondary dl{ text-align: center; }
 .secondary dt{ color:#FFFFFF !important; }
 
@@ -489,10 +487,14 @@ a{
 .user-secondary-navigation{ text-transform: uppercase;}
 
 .notification-history, .user-content .alert-info{
-    margin-right: 10px;
+    margin-left:10%;
 }
 
 .user-additional-controls{display:none;}
+
+.action-list{
+    margin-left:30%;
+}
 
 .notification .time{
     position:absolute;
@@ -518,7 +520,6 @@ a{
 .user-preferences .control-group .combo-box-header{
     width:400px;
     height:40px;
-    color:#000 !important;
 }
 
 .user-detail .details{
@@ -648,7 +649,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:f
 
 .top-section .stats-title{
     font-weight: 400;
-    font-size: 21px;
 }
 
 .user-content .stats-section{
@@ -735,7 +735,6 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:f
 
 .user-preferences .form-vertical .control-label{
     font-weight: 300;
-    font-size:25px;
 }
 
 .user-main .about .secondary dd{
@@ -786,7 +785,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:f
 .posts-wrapper .topic-body{
     background-color: #f6f6f6;
     width: calc(790px + (11px * 2));
-    padding: 20px 10px 6px;
+    padding: 20px 10px;
 }
 
 #topic-footer-buttons .topic-notifications-button{
@@ -843,8 +842,7 @@ nav.post-controls button{
 
 .topic-map .map li, .topic-map li a{
     display: flex;
-    align-items:flex-end;
-    height: 40px;
+    align-items:center;
 }
 
 .map:first-of-type .buttons,
@@ -917,6 +915,10 @@ li.avatars{
     width: 90px;
 }
 
+.controls.ember-view{
+    padding-top: 20px;
+}
+
 .controls.ember-view .alert.alert-info{
     background-color: transparent;
 }
@@ -970,176 +972,4 @@ li.avatars{
 
 .topic-map .map .topic-map-post .relative-date{
     color: #222222;
-}
-
-.nav-stacked a{
-    font-size: 1em;
-}
-
-.alert.alert-info{
-    background-color: #fbe6e1;
-}
-
-.popin-anti-scroll{
-    overflow-y: hidden;
-}
-
-.nav-pills>li>a:hover{
-    background-color:#fff;
-}
-
-.btn-default.cancel-edit.btn.no-text.btn-icon svg{
-    display: inline-flex !important;
-}
-
-.user-content-wrapper {
-    grid-row-gap: 40px;
-}
-
-.user-stream-item{
-    background-color: #f6f6f6 !important;
-    margin: 0 0 40px;
-    padding: 25px 30px !important;
-    border-bottom: none !important;
-}
-
-.user-stream .avatar-link{
-    margin-right: 15px;
-}
-
-.user-stream .title{
-    text-transform: uppercase;
-}
-
-.user-stream .excerpt{
-    color: #6c6d6d;
-}
-
-.user-stream .title a{
-    color:#222;
-}
-
-.user-primary-navigation{
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-}
-
-.user-content-wrapper{
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.bootbox.modal .modal-footer a.btn-primary:hover{
-    color: #ff4d4d;
-}
-
-.user-content-wrapper .user-additional-controls+.user-content, .user-content-wrapper .user-secondary-navigation+.user-content{
-    padding-top: 45px;
-    border: none;
-}
-
-.user-content.user-preferences
-{
-    padding-top:8px !important;
-    padding-left:183px !important;
-}
-
-.mobile-nav>li>a{
-    height: 50px;
-}
-
-.user-stream{
-    max-width: 80%;
-    width: 80%;
-    margin: 0 auto 40px;
-}
-
-.user-stream .title{
-    white-space: inherit;
-    text-align: center;
-}
-
-.user-stream-item .category{
-    text-align:center;
-}
-
-.user-stream-item .time{
-    text-align:center;
-    margin-bottom: 10px;
-}
-
-.user-stream .avatar-link{
-    float: initial;
-    text-align:center;
-}
-
-.user-stream .avatar-wrapper{
-    left: 50%;
-    position: relative;
-    transform:translateX(-50%);
-    margin-bottom: 10px;
-}
-.consent_banner.alert.alert-info {
- display:none;   
-}
-.preferences-nav li svg, .preferences-nav li a span{
-    display:none !important;
-}
-.user-menu .menu-links-row {
-    padding:10px;
-    font-size:17px;
-}
-.user-menu .notifications li {
-    padding-top:8px !important;
-    padding-bottom:8px !important;
-    background-color:#FFF;
-}
-.user-menu .notifications li a {
-    color:#000;
-    padding-left:10px;
-}
-.logout-link ul li a.logout {
-    color:#888;
-    padding-top:10px;
-    text-transform:uppercase;
-    padding-left:18px;
-}
-.dismiss-link ul li a.dismiss {
-    padding-top:10px;
-}
-.user-menu .user-activity-link {
-    color:#000;
-}
-.menu-links.columned li {
-    width:auto;
-    padding-right:10px;
-    text-transform:uppercase;
-}
-.menu-links.columned li a.widget-link.keyboard-shortcuts-link{
-     color:#000;
-     padding:12px;
-     padding-left:16px;
-}
-.menu-container-general-links ul li a {
-    color:#000;
-}
-.category-links .heading {
-    text-transform:uppercase;
-    padding-left:12px;
-}
-.category-links .heading a {
-    color:#000;
-}
-.menu-panel li.category-link {
-    padding-left:19px;
-    text-transform:uppercase;
-}
-
-.menu-panel li.category-link .badge-wrapper .badge-category .category-name {
-        color:#ff4d4d !important;
-
 }
