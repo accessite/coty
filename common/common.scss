@@ -440,6 +440,7 @@ a{
     justify-content:center;
 }
 
+
 .secondary dl{ text-align: center; }
 .secondary dt{ color:#FFFFFF !important; }
 
@@ -517,6 +518,7 @@ a{
 .user-preferences .control-group .combo-box-header{
     width:400px;
     height:40px;
+    color:#000 !important;
 }
 
 .user-detail .details{
@@ -733,6 +735,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:f
 
 .user-preferences .form-vertical .control-label{
     font-weight: 300;
+    font-size:25px;
 }
 
 .user-main .about .secondary dd{
@@ -1039,6 +1042,12 @@ li.avatars{
     border: none;
 }
 
+.user-content.user-preferences
+{
+    padding-top:8px !important;
+    padding-left:183px !important;
+}
+
 .mobile-nav>li>a{
     height: 50px;
 }
@@ -1073,4 +1082,64 @@ li.avatars{
     position: relative;
     transform:translateX(-50%);
     margin-bottom: 10px;
+}
+.consent_banner.alert.alert-info {
+ display:none;   
+}
+.preferences-nav li svg, .preferences-nav li a span{
+    display:none !important;
+}
+.user-menu .menu-links-row {
+    padding:10px;
+    font-size:17px;
+}
+.user-menu .notifications li {
+    padding-top:8px !important;
+    padding-bottom:8px !important;
+    background-color:#FFF;
+}
+.user-menu .notifications li a {
+    color:#000;
+    padding-left:10px;
+}
+.logout-link ul li a.logout {
+    color:#888;
+    padding-top:10px;
+    text-transform:uppercase;
+    padding-left:18px;
+}
+.dismiss-link ul li a.dismiss {
+    padding-top:10px;
+}
+.user-menu .user-activity-link {
+    color:#000;
+}
+.menu-links.columned li {
+    width:auto;
+    padding-right:10px;
+    text-transform:uppercase;
+}
+.menu-links.columned li a.widget-link.keyboard-shortcuts-link{
+     color:#000;
+     padding:12px;
+     padding-left:16px;
+}
+.menu-container-general-links ul li a {
+    color:#000;
+}
+.category-links .heading {
+    text-transform:uppercase;
+    padding-left:12px;
+}
+.category-links .heading a {
+    color:#000;
+}
+.menu-panel li.category-link {
+    padding-left:19px;
+    text-transform:uppercase;
+}
+
+.menu-panel li.category-link .badge-wrapper .badge-category .category-name {
+        color:#ff4d4d !important;
+
 }

@@ -447,3 +447,44 @@
 .topic-list tbody{
     border-top: none;
 }
+
+.user-content.user-preferences
+{
+    padding-top:30px !important;
+    padding-left:18px !important;
+}
+.user-content.user-preferences .control-group.pref-auth-tokens {
+    padding-right:20px;
+}
+.user-content.user-preferences .control-group.pref-profile-bg {
+    width:90%;
+}
+.user-content.user-preferences .combo-box-header{
+    width:340px;
+}
+.user-secondary-navigation .main-nav li a{
+    height:50px;
+    justify-content:center;
+}
+.user-secondary-navigation .preferences-nav.mobile-nav.ember-view {
+    position:relative;
+        background-color: #f6f6f6;
+    border: none;
+    width: 80%;
+    display: block;
+    top: 85%;
+    margin:auto;
+}
+.user-preferences .bio-composer, .group-form-bio {
+    width:90%
+    
+}
+.user-preferences .controls.tracking-controls {
+    width:94%;
+}
+.user-preferences .instructions {
+    width:90%;
+}
+.user-preferences .select-kit.multi-select {
+    width:100%;
+}
