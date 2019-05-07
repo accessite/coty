@@ -488,3 +488,141 @@
 .user-preferences .select-kit.multi-select {
     width:100%;
 }
+
+.user-stream .avatar-link{
+    float: initial;
+    text-align:center;
+}
+
+.user-stream .title{
+    white-space: inherit;
+    text-align: center;
+}
+
+.user-stream-item .category{
+    text-align:center;
+}
+
+.preferences-nav .drop.expanded,
+.activity-nav .drop.expanded{
+    text-transform: initial;
+}
+
+.user-stream .user-stream-item .user-stream-item-actions.child-actions{
+    justify-content:center;
+}
+
+.notifications-nav.mobile-nav.ember-view{
+    background-color: #f6f6f6;
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+    top: 100%;
+    height: 50px;
+}
+
+.main-nav.mobile-nav.ember-view .fa.d-icon.d-icon-comment.svg-icon.glyph.svg-string{
+    display:none;
+}
+
+.notifications-nav.mobile-nav.ember-view .drop.expanded{
+    text-transform: initial;
+}
+
+.item.notification.large-notification .read a{
+    flex-direction: column;
+}
+
+.notification-history .notification .time{
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.item.notification.large-notification{
+    position: relative;
+}
+
+.item.notification.large-notification .read{
+    width:100%;
+}
+
+.user-stream .notification .fa, .user-stream .notification .icon{
+    padding: 0;
+    margin: 0;
+}
+
+.item.notification.large-notification .read div{
+    margin: 15px 0;
+}
+
+#topic-progress{
+    display: none;
+}
+
+.posts-wrapper .topic-avatar{
+    padding-right: 0;
+    margin-right: 5px;
+    padding-top: 0;
+}
+
+.post-stream{
+    border-top: none !important;
+}
+
+.topic-post article{
+    border-top: none !important;
+}
+
+.post-stream .topic-post{
+    padding-top: 0;
+}
+
+#topic-title .topic-category{
+    margin-top: 15px;
+}
+
+.topic-meta-data{
+    margin-left:0;
+}
+
+.topic-avatar .trigger-user-card.main-avatar img{
+    width: 35px;
+    height: 35px;
+}
+
+.topic-map .map li, .topic-map li a{
+    height: auto;
+}
+
+.topic-map h4{
+    margin-right: 10px;
+}
+
+.posts-wrapper .topic-body{
+    padding: 15px 10px 6px;
+}
+
+.regular{
+    padding-top: 25px;
+}
+
+#topic-footer-buttons{
+    left: 0;
+    transform: translateX(0);
+    width: 100%;
+}
+
+.topic-footer-main-buttons{
+    justify-content:center;
+}
+
+.select-kit.combo-box .select-kit-header.is-focused{
+    border-color: #ff4d4d;
+    box-shadow: 0 0 6px 0 #ff4d4d;
+}
+
+#topic-footer-buttons{
+    margin: 0px !important;
+}
