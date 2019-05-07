@@ -176,7 +176,13 @@
         });
         
         $(".static-faq, .about-page, .static-tos, .static-privacy").find("#main-outlet .ember-view ul").remove();
-
+        
+        if($(".user-main .user-content-wrapper .user-nav li").length == 6){
+            $(".user-main .user-content-wrapper .user-nav li:nth-child(4), .user-main .user-content-wrapper .user-nav li:nth-child(5)").remove();
+        }
+        else if($(".user-main .user-content-wrapper .user-nav li").length == 5){
+            $(".user-main .user-content-wrapper .user-nav li:nth-child(4)").remove();
+        }
         
     });
     
@@ -334,7 +340,6 @@
         //$(".user-main .user-content-wrapper ul li:nth-child(1) a").prepend('<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --><title>Icon-3</title><desc>Created with Sketch.</desc><g id="Symboles" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><g id="Icon-3" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF" stroke-width="1.5"><path d="M4.87771429,15.7051253 C5.83695238,16.1209179 6.89219048,16.3513947 8,16.3513947 C12.4175238,16.3513947 16,12.6910182 16,8.17569734 C16,3.66037649 12.4175238,0 8,0 C3.58171429,0 0,3.66037649 0,8.17569734 C0,9.60761233 0.360380952,10.9538772 0.99352381,12.1249485 L0.231619048,17 L4.87771429,15.7051253 Z" id="Stroke-1"></path></g></g></svg>')
         
         $(".static-faq, .about-page, .static-tos, .static-privacy").find("#main-outlet .ember-view ul").remove();
-        
     });
 
     
