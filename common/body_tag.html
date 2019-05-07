@@ -15,16 +15,6 @@
         var name_split = name.split(' ');
         $(".welcome_title").find('h1').text("WELCOME " + name_split[0].toUpperCase());
         
-        //MENU NON DEROULANT
-        console.log($(".navigation-container #navigation-bar li").length);
-        if($(".navigation-container #navigation-bar li").length > 2){
-            $(".navigation-container #navigation-bar li:nth-child(7)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(6)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(4)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(3)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(2)").remove();
-        }
-        
         $("#search-button").find('svg').remove();
         $("#search-button").append('<svg class="fa d-icon d-icon-search svg-icon svg-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24.92"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Fill-1</title> <g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="HEADER-DESKTOP"><path id="Fill-1" class="cls-1" d="M24,21.46l-1.43,1.48a.16.16,0,0,1-.24,0L18.6,19.42a11.07,11.07,0,0,0,1.64-1.78L24,21.22a.17.17,0,0,1,0,.24M1.94,11.11A9.26,9.26,0,1,1,11.2,20.3a9.24,9.24,0,0,1-9.26-9.19m23.41,8.72L21.27,16a10.94,10.94,0,0,0,1.13-4.84A11.22,11.22,0,1,0,17,20.58l4,3.76a2.14,2.14,0,0,0,1.46.58A2.11,2.11,0,0,0,24,24.27l1.43-1.48a2.08,2.08,0,0,0-.06-3"/></g></g></g></g></svg>');
         $("#toggle-hamburger-menu").find('svg').remove();
@@ -110,7 +100,7 @@
            
         });
         
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
@@ -198,15 +188,6 @@
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         });
-        
-        //MENU NON DEROULANT
-        if($(".navigation-container #navigation-bar li").length > 2){
-            $(".navigation-container #navigation-bar li:nth-child(7)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(6)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(4)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(3)").remove();
-            $(".navigation-container #navigation-bar li:nth-child(2)").remove();
-        }
         
         //HOME SVGS
         $("#search-button").find('svg').remove();
@@ -314,7 +295,7 @@
 
 //////////////////////////////////////////////////////////////////////////
 
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $(".search-advanced").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
