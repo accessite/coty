@@ -18,7 +18,7 @@ html{
 }
 
 
-.user-nav li:nth-child(4), .user-nav li:nth-child(5), .user-nav li:nth-child(6){
+.user-nav li:nth-child(4), .user-nav li:nth-child(5){
     display:none;
 }
 
@@ -1275,3 +1275,133 @@ tr.topic-list-item .link-bottom-line .badge-wrapper.bullet .badge-category.clear
 .d-header-icons .icon:hover, .d-header-icons .icon:focus{
     background-color: transparent;
 }
+
+/*
+**  MODIFS ABOUT
+*/
+
+.about-page .description{
+    text-align:center;
+    width:100%;
+    max-width:none!important;
+}
+
+.about-page .description h2{
+    text-transform:uppercase;
+    font-family: 'PT Sans', sans-serif;
+    font-weight:normal;
+    padding-top:40px;
+    padding-bottom:50px;
+    border-bottom:solid 0.001em #F1F1F1;
+}
+
+.about-page .description p{
+    padding-top:20px;
+    padding-bottom:50px;
+}
+
+.about-page .admins, .about-page .moderators{
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.about-page .admins h3, .about-page .moderators h3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight:normal;
+}
+.about-page .admins h3 svg, .about-page .moderators h3 svg{
+    display:none;
+}
+
+.about-page .user-info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.about-page .user-image{
+    padding-right:0;
+    margin-right:5px;
+}
+
+
+.about-page .stats{
+    padding-top:20px;
+    width:100%;
+    max-width:none!important;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.about-page .stats h3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight:normal;
+    font-size:22px;
+    margin-bottom:50px;
+}
+
+.about-page .stats svg{
+    display:none;
+}
+
+.about-page .stats table{
+    margin:auto;
+    width:70%;
+    text-align:left;
+    background-color:#f6f6f6;
+}   
+
+.about-page .stats .table th:nth-child(1){
+    width:500px !important;
+}
+
+.about-page .contact{
+    margin-top:70px;
+    padding-bottom:60px;
+    width:100%;
+    max-width:none!important;
+    text-align:center;
+}
+
+.about-page .contact h3{
+    font-family: 'PT Sans', sans-serif;
+    font-weight:normal;
+    font-size:22px;
+    text-transform:uppercase;
+}
+
+.about-page .contact svg{
+    display:none;
+}
+
+
+/*
+**  FIN MODIFS ABOUT
+*/
+
+
+/*
+**  MODIFS FAQ
+*/
+
+.static-faq .body-page, .static-tos .body-page, .static-privacy .body-page{
+    padding-top:50px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.static-faq .body-page h2 a, .static-tos .body-page h2 a, .static-privacy .body-page h2 a{
+    color:#000000;
+}
+
+.static-faq .body-page p, .static-tos .body-page p, .static-privacy .body-page p{
+    text-align:left;
+}
+/*
+**  FIN MODIFS FAQ
+*/
