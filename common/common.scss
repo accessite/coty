@@ -1412,6 +1412,22 @@ tr.topic-list-item .link-bottom-line .badge-wrapper.bullet .badge-category.clear
 **  FIN RECHERCHE AVANCEE
 */
 
+.d-editor-preview-wrapper {
+    display:none;
+}
+
+#reply-control .user-selector, #reply-control .title-and-category{
+    width:100% !important;
+}
+
+.categories-admin-dropdown .dropdown-select-box-header{
+    justify-content:center!important;
+}
+
+.categories-admin-dropdown .dropdown-select-box-header svg{
+    color:#fff;
+}
+
 .menu-container-general-links{
     padding: 12px;
 }

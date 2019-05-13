@@ -34,7 +34,7 @@
         $(".category-drop-header").append('<svg class="fa d-icon d-icon-caret-right svg-icon caret-icon svg-string" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5"><style>.triangle-svg{fill:#fff;}</style><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="Group"><polygon id="Triangle" class="triangle-svg" points="4 5 0 0 8 0 4 5"/></g></g></g></g></svg>');
         
         $("#site-logo").attr('src','https://coty-discourse.teachonmars.com/uploads/default/original/1X/071a0bcf02c2f668ab2babb1aa7e2727165965ef.png');
-        $('.d-button-label').text("ADD A TOPIC");
+        $('.btn.create .d-button-label').text("ADD A TOPIC");
         
         $('.views .number').each(function(){
             var currentNum = "";
@@ -111,7 +111,7 @@
             $(".welcome_title").hide();
         } else $(".welcome_title").show();
         
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".nav-item-about").length > 0  || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".nav-item-about").length > 0  || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0 || $("body").find(".user-profile-avatar").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
@@ -223,7 +223,7 @@
             $(".welcome_title").hide();
         } else $(".welcome_title").show();
         
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".nav-item-about").length > 0  || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".nav-item-about").length > 0  || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0 || $("body").find(".user-profile-avatar").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
