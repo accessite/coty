@@ -1412,3 +1412,79 @@ tr.topic-list-item .link-bottom-line .badge-wrapper.bullet .badge-category.clear
 **  FIN RECHERCHE AVANCEE
 */
 
+.menu-container-general-links{
+    padding: 12px;
+}
+
+.hamburger-panel .menu-container-footer-links{
+    padding: 5px 12px;
+}
+
+.menu-container-general-links ul li a,
+.menu-panel li a, .menu-panel li.heading a{
+    font-size: 14px;
+}
+
+.menu-panel li.heading a{
+    margin-bottom: 10px;
+}
+
+.hamburger-panel .menu-container-footer-links .widget-link{
+    color: #000;
+}
+
+.menu-panel.slide-in{
+    padding: 0;
+}
+
+.menu-panel.slide-in .panel-body{
+    width: 100%;
+}
+
+.menu-container-general-links{
+    padding: 0 !important;
+}
+
+.menu-container-general-links ul{
+    padding: 12px 12px 35px 12px;
+}
+
+.search-container{
+    padding: 20px 40px;
+}
+
+.search-advanced #create-topic svg{
+    display: none;
+}
+
+.search-advanced #create-topic{
+    background-color:#ff4d4d;
+    color: #fff;
+    border: solid 1px #ff4d4d;
+}
+
+.search-advanced #create-topic:hover{
+    background-color:#fff;
+    color: #ff4d4d;
+}
+
+.select-kit .select-kit-row.is-selected.is-highlighted{
+    background: rgba(255,77,77,0.2);
+}
+
+.select-kit.combo-box .select-kit-header.is-focused{
+    border-color: #ff4d4d;
+    box-shadow: 0 0 6px 0 #ff4d4d;
+}
+
+.select-kit .select-kit-row.is-selected{
+     background-color: #ff4d4d;
+}
+
+.search-results .fps-result .search-link{
+    color: #222;
+}
+
+.search-container .search-advanced .search-info{
+    border-bottom: none;
+}
