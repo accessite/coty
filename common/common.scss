@@ -274,6 +274,7 @@ td.main-link.clearfix{
 
 .btn-primary{
     background: #ff4d4d;
+    border: solid 1px #ff4d4d;
 }
 
 .select-kit.dropdown-select-box.period-chooser .period-chooser-header h2.selected-name .date-section,
@@ -568,7 +569,7 @@ a{
     padding: 30px 50px 15px;
 }
 
-#reply-control{
+#reply-control.hide-preview{
     max-width: 840px;
 }
 
@@ -730,7 +731,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:f
 
 .user-preferences .form-vertical .control-label{
     font-weight: 300;
-    font-size:25px;
+    font-size:19px;
 }
 
 .user-main .about .secondary dd{
@@ -1412,22 +1413,6 @@ tr.topic-list-item .link-bottom-line .badge-wrapper.bullet .badge-category.clear
 **  FIN RECHERCHE AVANCEE
 */
 
-.d-editor-preview-wrapper {
-    display:none;
-}
-
-#reply-control .user-selector, #reply-control .title-and-category{
-    width:100% !important;
-}
-
-.categories-admin-dropdown .dropdown-select-box-header{
-    justify-content:center!important;
-}
-
-.categories-admin-dropdown .dropdown-select-box-header svg{
-    color:#fff;
-}
-
 .menu-container-general-links{
     padding: 12px;
 }
@@ -1449,11 +1434,7 @@ tr.topic-list-item .link-bottom-line .badge-wrapper.bullet .badge-category.clear
     color: #000;
 }
 
-.menu-panel.slide-in{
-    padding: 0;
-}
-
-.menu-panel.slide-in .panel-body{
+.hamburger-panel .menu-panel.slide-in .panel-body{
     width: 100%;
 }
 
@@ -1503,4 +1484,20 @@ tr.topic-list-item .link-bottom-line .badge-wrapper.bullet .badge-category.clear
 
 .search-container .search-advanced .search-info{
     border-bottom: none;
+}
+
+.user-stream .notification .fa, .user-stream .notification .icon{
+    padding: 0;
+}
+
+.select-kit.dropdown-select-box.period-chooser .period-chooser-header{
+    font-size: 13px;
+}
+
+a:visited{
+    color: #ff4d4d;
+}
+
+.hamburger-panel .menu-panel.slide-in{
+    padding: 0;
 }
