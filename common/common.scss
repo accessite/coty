@@ -1501,3 +1501,27 @@ a:visited{
 .hamburger-panel .menu-panel.slide-in{
     padding: 0;
 }
+
+.categories-admin-dropdown .dropdown-select-box-header{
+    justify-content:center!important;
+}
+
+.categories-admin-dropdown .dropdown-select-box-header svg{
+    color:#fff;
+}
+
+.dropdown-select-box-row .icons svg{
+    color:#000!important;
+}
+
+.d-editor-preview-wrapper {
+    display:none;
+}
+
+#reply-control .user-selector, #reply-control .title-and-category{
+    width:100%!important;
+}
+
+#reply-control{
+    width:50%;
+}
