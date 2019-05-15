@@ -1315,11 +1315,12 @@ tr.topic-list-item .link-bottom-line .badge-wrapper.bullet .badge-category.clear
 	align-items: center;
     justify-content: center;
     width:100%;
+    margin-left:0!important;
 }
 
 .about-page .user-image{
-    padding-right:0;
-    margin-right:5px;
+    padding-right:0!important;
+    margin-right:0px!important;
 }
 
 
@@ -1506,8 +1507,8 @@ a:visited{
     justify-content:center!important;
 }
 
-.categories-admin-dropdown .dropdown-select-box-header svg{
-    color:#fff;
+.categories-admin-dropdown .dropdown-select-box-header svg, .edit-category.btn svg, .category-notifications-button svg{
+    color:#fff!important;
 }
 
 .dropdown-select-box-row .icons svg{
@@ -1524,4 +1525,17 @@ a:visited{
 
 #reply-control{
     width:50%;
+}
+
+.reviewable-container .reviewable-list{
+    margin-left:25px;
+}
+
+.groups-header{
+    margin-top:50px;
+}
+
+.new-private-message{
+    max-height: max-content;
+    min-width: max-content;
 }
