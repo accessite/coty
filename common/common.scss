@@ -844,7 +844,8 @@ nav.post-controls button{
 }
 
 .map:first-of-type .buttons,
-.timeline-container,
+.timeline-scrollarea-wrapper,
+.timeline-footer-controls,
 .small-action,
 li.avatars{
     display: none !important;
@@ -1129,7 +1130,7 @@ li.avatars{
     margin-top:70px;
 }
 
-.pinned-button, .topic-footer-main-buttons .toggle-admin-menu{
+.pinned-button, .topic-footer-main-buttons{
     display:none;
 }
 
@@ -1538,4 +1539,31 @@ a:visited{
 .new-private-message{
     max-height: max-content;
     min-width: max-content;
+}
+
+.alert-emails-disabled, .login-required h2 a{
+    display:none;
+}
+
+.login-required{
+    padding-top:50px;
+    color:#FFF;
+}
+
+.edit-category-modal .nav-pills li a{
+    color:#ff4d4d !important;
+}
+
+.keyboard-shortcuts-link{
+    padding:3px !important;
+}
+
+.static-login .body-page{
+    text-align:center;
+    max-width:none;
+    margin-top:220px;
+}
+
+.center_button_retour{
+    margin-left:20px;
 }

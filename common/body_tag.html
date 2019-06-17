@@ -1,4 +1,11 @@
 <script>
+
+    $( document ).on("scroll", function(){
+       $('body').find("#search-button").find('svg').remove();
+        $('body').find("#search-button").append('<svg class="fa d-icon d-icon-search svg-icon svg-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24.92"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Fill-1</title> <g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="HEADER-DESKTOP"><path id="Fill-1" class="cls-1" d="M24,21.46l-1.43,1.48a.16.16,0,0,1-.24,0L18.6,19.42a11.07,11.07,0,0,0,1.64-1.78L24,21.22a.17.17,0,0,1,0,.24M1.94,11.11A9.26,9.26,0,1,1,11.2,20.3a9.24,9.24,0,0,1-9.26-9.19m23.41,8.72L21.27,16a10.94,10.94,0,0,0,1.13-4.84A11.22,11.22,0,1,0,17,20.58l4,3.76a2.14,2.14,0,0,0,1.46.58A2.11,2.11,0,0,0,24,24.27l1.43-1.48a2.08,2.08,0,0,0-.06-3"/></g></g></g></g></svg>');
+        $('body').find("#toggle-hamburger-menu").find('svg').remove();
+        $('body').find("#toggle-hamburger-menu").append('<svg class="fa d-icon d-icon-bars svg-icon svg-node" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 18"><style>.burger-svg{fill:none;stroke:#fff;stroke-linecap:square;stroke-width:2px;}</style><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Desktop-Home"><g id="HEADER-DESKTOP"><g id="Group"><path id="SELEC" class="burger-svg" d="M26,1H1"/><path id="SELEC-2" data-name="SELEC" class="burger-svg" d="M26,9H1"/><path id="SELEC-3" data-name="SELEC" class="burger-svg" d="M26,17H1"/></g></g></g></g></g></svg>'); 
+    });
     
     $( document ).ajaxSuccess(function(){
         
@@ -94,7 +101,7 @@
            
         });
         
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".nav-item-about").length > 0  || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0 || $(".groups-header").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".nav-item-about").length > 0  || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0 || $(".groups-header").length > 0 || $(".error-page").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
@@ -175,8 +182,12 @@
             $(".user-main .user-content-wrapper .user-nav li:nth-child(4)").remove();
         }
         
-        //Refonte du footer du menu
-        
+        if($("div.category-drop-header:nth-child(1)").length == 2 && $(".retour_button").length == 0)
+            $(".navigation-container .nav-pills").append('<li title="the most active topics in the last year, month, week or day" id="ember175" class="ember-view"><span class="retour_button center_button_retour"><svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --><title>return</title><desc>Created with Sketch.</desc><g id="return" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#FFF" fill-rule="nonzero" id="Path" stroke="#FFF" stroke-width="0.5"><path d="M15.0325463,4.05577306 C15.0052808,4.05577306 1.41018348,4.05577306 1.41018348,4.05577306 L4.27447616,0.842298572 C4.46021808,0.633897986 4.44201498,0.314259187 4.23381216,0.12834084 C4.02568746,-0.0575384071 3.70627387,-0.0393962172 3.52053195,0.169043469 L0.294677303,3.78809756 C-0.0982518085,4.22906225 -0.098212746,4.89391095 0.294716366,5.33475835 L3.52057102,8.95385154 C3.62041462,9.06587174 3.75873473,9.12287888 3.89767984,9.12287888 C4.01736716,9.12287888 4.13748417,9.08053407 4.23385122,8.99455417 C4.44205404,8.80863582 4.46021808,8.48899702 4.27451522,8.28059643 L1.41022254,5.06708285 C1.41022254,5.06708285 15.0052808,5.06708285 15.0325854,5.06708285 C17.2145353,5.06708285 18.9896109,6.84392267 18.9896109,9.02786698 C18.9896109,11.2118113 17.2144963,12.9886511 15.0325854,12.9886511 L12.6271202,12.9886511 C12.3480971,12.9886511 12.1219256,13.2150766 12.1219256,13.4943256 C12.1219256,13.7735745 12.3480971,14 12.6271202,14 L15.0325854,14 C17.7716439,14 20,11.7695272 20,9.02786698 C19.9999609,6.28624583 17.7716048,4.05577306 15.0325463,4.05577306 Z"></path></g></g></svg></span></li>');
+
+        $("body").on("click", ".retour_button", function(){
+           history.back(); 
+        });
         
     });
     
@@ -308,12 +319,17 @@
         if($("#topic-title .title-wrapper .retour_button").length == 0)
             $("#topic-title .title-wrapper").prepend('<span class="retour_button"><svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --><title>return</title><desc>Created with Sketch.</desc><g id="return" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#757575" fill-rule="nonzero" id="Path" stroke="#757575" stroke-width="0.5"><path d="M15.0325463,4.05577306 C15.0052808,4.05577306 1.41018348,4.05577306 1.41018348,4.05577306 L4.27447616,0.842298572 C4.46021808,0.633897986 4.44201498,0.314259187 4.23381216,0.12834084 C4.02568746,-0.0575384071 3.70627387,-0.0393962172 3.52053195,0.169043469 L0.294677303,3.78809756 C-0.0982518085,4.22906225 -0.098212746,4.89391095 0.294716366,5.33475835 L3.52057102,8.95385154 C3.62041462,9.06587174 3.75873473,9.12287888 3.89767984,9.12287888 C4.01736716,9.12287888 4.13748417,9.08053407 4.23385122,8.99455417 C4.44205404,8.80863582 4.46021808,8.48899702 4.27451522,8.28059643 L1.41022254,5.06708285 C1.41022254,5.06708285 15.0052808,5.06708285 15.0325854,5.06708285 C17.2145353,5.06708285 18.9896109,6.84392267 18.9896109,9.02786698 C18.9896109,11.2118113 17.2144963,12.9886511 15.0325854,12.9886511 L12.6271202,12.9886511 C12.3480971,12.9886511 12.1219256,13.2150766 12.1219256,13.4943256 C12.1219256,13.7735745 12.3480971,14 12.6271202,14 L15.0325854,14 C17.7716439,14 20,11.7695272 20,9.02786698 C19.9999609,6.28624583 17.7716048,4.05577306 15.0325463,4.05577306 Z"></path></g></g></svg></span>');
 
+        if($("div.category-drop-header").length == 2 && $(".retour_button").length == 0)
+            $(".navigation-container .nav-pills").append('<li title="the most active topics in the last year, month, week or day" id="ember175" class="ember-view"><span class="retour_button center_button_retour"><svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com --><title>return</title><desc>Created with Sketch.</desc><g id="return" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill="#FFF" fill-rule="nonzero" id="Path" stroke="#FFF" stroke-width="0.5"><path d="M15.0325463,4.05577306 C15.0052808,4.05577306 1.41018348,4.05577306 1.41018348,4.05577306 L4.27447616,0.842298572 C4.46021808,0.633897986 4.44201498,0.314259187 4.23381216,0.12834084 C4.02568746,-0.0575384071 3.70627387,-0.0393962172 3.52053195,0.169043469 L0.294677303,3.78809756 C-0.0982518085,4.22906225 -0.098212746,4.89391095 0.294716366,5.33475835 L3.52057102,8.95385154 C3.62041462,9.06587174 3.75873473,9.12287888 3.89767984,9.12287888 C4.01736716,9.12287888 4.13748417,9.08053407 4.23385122,8.99455417 C4.44205404,8.80863582 4.46021808,8.48899702 4.27451522,8.28059643 L1.41022254,5.06708285 C1.41022254,5.06708285 15.0052808,5.06708285 15.0325854,5.06708285 C17.2145353,5.06708285 18.9896109,6.84392267 18.9896109,9.02786698 C18.9896109,11.2118113 17.2144963,12.9886511 15.0325854,12.9886511 L12.6271202,12.9886511 C12.3480971,12.9886511 12.1219256,13.2150766 12.1219256,13.4943256 C12.1219256,13.7735745 12.3480971,14 12.6271202,14 L15.0325854,14 C17.7716439,14 20,11.7695272 20,9.02786698 C19.9999609,6.28624583 17.7716048,4.05577306 15.0325463,4.05577306 Z"></path></g></g></svg></span></li>');
+
         $("body").on("click", ".retour_button", function(){
            history.back(); 
         });
+        
+        
 //////////////////////////////////////////////////////////////////////////
 
-        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0 || $(".groups-header").length > 0){
+        if($(".topic-body").length > 0 || $(".user-content").length > 0 || $(".badge-contents").length > 0 || $("body").find(".search-advanced").length > 0 || $("body").find(".reviewable-title").length > 0 || $(".static-faq, .about-page, .static-tos, .static-privacy").length > 0 || $(".groups-header").length > 0 || $(".error-page").length > 0){
             $(".welcome_title").hide();
             $(".replace_title_header").show();
         } else {
