@@ -549,7 +549,7 @@ a{
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .popin_add-topic{
@@ -562,7 +562,7 @@ a{
 }
 
 #reply-control{
-    z-index: 99999;
+    z-index: 100;
 }
 
 #reply-control .reply-area{
@@ -1566,4 +1566,8 @@ a:visited{
 
 .center_button_retour{
     margin-left:20px;
+}
+
+#reply-control.open{
+    height:70% !important;
 }

@@ -367,7 +367,7 @@
 }
 
 #reply-control.open.edit-title{
-    height: 100% !important;
+    height: 80% !important;
     bottom: 0 !important;
     top: 50% !important;
 }
@@ -687,7 +687,9 @@
 }
 
 #reply-control{
-    width:95%;
+    width:84%;
+    padding-left:8%;
+    padding-right:8%;
 }
 
 .category-navigation ul{
@@ -704,4 +706,8 @@
 
 .static-login .body-page{
     padding-right:20px;
+}
+
+#reply-control .d-editor-preview img:not(.thumbnail), .cooked img:not(.thumbnail){
+    max-width:100%!important;
 }
